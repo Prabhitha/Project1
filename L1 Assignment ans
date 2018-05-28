@@ -1,0 +1,70 @@
+L1 Assignment ans:
+
+mylist =list(range(4))
+seclist = mylist
+print(seclist)
+mylist.append(4)
+print(seclist)
+seclist = mylist[:]
+print(seclist)
+mylist.append(5)
+print(seclist)
+
+
+[0, 1, 2, 3]
+[0, 1, 2, 3, 4]
+[0, 1, 2, 3, 4]
+[0, 1, 2, 3, 4]
+
+
+def f(n):
+    for x in range(n):
+        yield (x**3)
+
+for x in f(6):
+    print(x)
+
+0
+1
+8
+27
+64
+125
+
+3. Write a program to receive a string from keybord and check if the string has two 'e' in the characters. 
+   If yes return True else False.
+
+
+def fn(str):
+    count=0
+    n=len(str)
+    for i in range(n):
+        if(str[i]=='e'):
+            count=count+1
+    if(count==2):
+        return True
+    else:
+        return False
+fn(input())
+
+
+4. 
+
+counter = 1
+def dolots(count):
+    global counter
+    for i in (1, 2, 3):
+        counter = count + i
+
+print(dolots(4))
+print(counter)
+
+
+None
+7
+
+5.	Write a code to read  the data from  input file called input.txt and count the number of characters per line, number of words per line and write these into output file called as output.txt 
+
+
+
+
