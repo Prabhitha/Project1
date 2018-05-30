@@ -1,0 +1,208 @@
+Program1:
+
+a, b = 20, 10
+c = a + b
+print("Addition of two numbers is {0}".format(c))
+c = a - b
+print("Subtraction of two numbers is {0}".format(c))
+c = a * b 
+print("Multiplication of two numbers is {0}".format(c))
+c = a / b 
+print("Division of two numbers is {0}".format(c))
+
+
+Output:
+Addition of two numbers is 30
+Subtraction of two numbers is 10
+Multiplication of two numbers is 200
+Division of two numbers is 2.0
+
+
+Program2:
+
+a, b, c = 20, 10, 30
+if  a > b and  a > c  :
+    print("Biggest of three numbers is {0}".format(a))
+if  b > a and  b> c :
+    print("Biggest of three numbers is {0}".format(b))
+if c > a and  c > b :
+    print("Biggest of three numbers is {0}".format(c))
+
+Output:  
+Biggest of three numbers is 30
+
+Program3:
+
+a = 10
+b = a % 2
+if  b == 0 :
+    print("Given number is {0} even".format(c)) 
+else :
+    print("Given number is {0} odd".format(c)) 
+
+Output:
+Given number is 30 even
+
+Program4:
+
+a = 7
+for i in (2, a-1 ):
+    if (a % i == 0) :
+        print("The given number {0} is not prime".format(a))
+        break
+    else:
+        print("The given number {0} is prime".format(a))
+        break
+
+Output:
+The given number 7 is prime
+
+Program5:
+
+import sys
+#arg1=27
+#arg2=36
+#arg3=60
+print("First number is ", sys.argv[1])
+print("Second number is ", sys.argv[2])
+print("Third number is ", sys.argv[3])
+print("The biggest of three numbers is", max ( sys.argv[1], sys.argv[2], sys.argv[3] ))
+
+Output:
+D:\Python\Top gear>python Program5.py 10 20 30
+First number is  10
+Second number is  20
+Third number is  30
+The biggest of three numbers is 30
+
+Program6:
+
+str1 = "Chennai"
+str2 = "city"
+for i in str1:
+    print ("current letter is", i)
+str3 = str1[2:5]
+print ("sub-string is", str3)
+print ("Repeated string is", str1 * 100)
+print ("Concatenated string is", str1 + str2)
+
+
+Output:
+current letter is C
+current letter is h
+current letter is e
+current letter is n
+current letter is n
+current letter is a
+current letter is i
+sub-string is enn
+Repeated string is ChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennaiChennai
+Concatenated string is Chennaicity
+
+
+Program7:
+
+List = [ 12, 23, 'Hello', 60.6, 'Chennai' ]
+List1 = [ 21, 32, 60 ]
+a = List [ 1:3 ] 
+b = List * 2
+c = List + List1
+print(List)
+print(a) 
+print(b)
+print(c)
+
+Output:
+[12, 23, 'Hello', 60.6, 'Chennai']
+[23, 'Hello']
+[12, 23, 'Hello', 60.6, 'Chennai', 12, 23, 'Hello', 60.6, 'Chennai']
+[12, 23, 'Hello', 60.6, 'Chennai', 21, 32, 60]
+
+Program8:
+
+Tuple = ( 12, 23, 'Hello', 60.6, 'Chennai' )
+Tuple1 = ( 21, 32, 60 )
+a = Tuple[ 1:3 ] 
+b = List * 2
+c = List + List1
+print (List)
+print (a)
+print (b)
+print (c)
+
+Output:
+[12, 23, 'Hello', 60.6, 'Chennai']
+(23, 'Hello')
+[12, 23, 'Hello', 60.6, 'Chennai', 12, 23, 'Hello', 60.6, 'Chennai']
+[12, 23, 'Hello', 60.6, 'Chennai', 21, 32, 60]
+
+Program9:
+
+import sys
+a = complex(int(sys.argv[1]), int(sys.argv[2]))
+b = complex(int(sys.argv[3]), int(sys.argv[4]))
+
+c = a + b
+print("Addition of two numbers is ", c)
+c = a - b
+print("Subtraction of two numbers is ", c)
+c = a * b 
+print("Multiplication of two numbers is ", c)
+c = a / b 
+print("Division of two numbers is ", c)
+
+Output:
+D:\Python\Top gear>python Program9.py 10 20 30 40
+Addition of two numbers is  (40+60j)
+Subtraction of two numbers is  (-20-20j)
+Multiplication of two numbers is  (-500+1000j)
+Division of two numbers is  (0.44+0.08j)
+
+
+Program10:
+
+import sys
+c=int(sys.argv[1])
+c += int(sys.argv[2])
+print("Addition of two numbers is ", c)
+c -= int(sys.argv[2])
+print("Subtraction of two numbers is ", c)
+c *= int(sys.argv[2])
+print("Multiplication of two numbers is ", c)
+c /= int(sys.argv[2])
+print("Division of two numbers is ", c)
+c %= int(sys.argv[2])
+print("modulus of two numbers is ", c)
+c **= int(sys.argv[2])
+print("Exponentiation of two numbers is ", c)
+c //= int(sys.argv[2])
+print("Floor division of two numbers is ", c)
+
+
+Output:
+Addition of two numbers is  30
+Subtraction of two numbers is  10
+Multiplication of two numbers is  200
+Division of two numbers is  10.0
+modulus of two numbers is  10.0
+Exponentiation of two numbers is  1e+20
+Floor division of two numbers is  5e+18
+
+
+Program11:
+
+
+import sys
+a = int(sys.argv[1]) and int(sys.argv[2])
+b = int(sys.argv[1]) or int(sys.argv[2])
+c = not(int(sys.argv[1]) and int(sys.argv[2]))
+print (a)
+print (b)
+print (c)
+
+Output:
+D:\Python\Top gear>Python Program11.py 1 0
+0
+1
+True
+
